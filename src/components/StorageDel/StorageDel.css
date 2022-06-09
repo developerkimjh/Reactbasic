@@ -1,0 +1,66 @@
+.delsto {
+    display: flex;
+    margin: 5px 5px 0 0;
+    justify-content: flex-end;
+}
+
+.delstorage {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   .delstorage, .delstorage span {
+    transition: 200ms;
+   }
+   
+   .delstorage .text {
+    transform: translateX(10px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .delstorage .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .delstorage svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .delstorage:hover {
+    background: #ff3636;
+   }
+   
+   .delstorage:hover .text {
+    color: transparent;
+   }
+   
+   .delstorage:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .delstorage:focus {
+    outline: none;
+   }
+   
+   .delstorage:active .icon svg {
+    transform: scale(0.8);
+   }
